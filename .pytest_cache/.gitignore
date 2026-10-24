@@ -1,0 +1,8 @@
+.pytest_cache/
+__pycache__/
+*.o
+*.obj
+*.exe
+*.dll
+atm_sim
+atm_sim.exe
