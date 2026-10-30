@@ -25,27 +25,28 @@
 ### 3. Cấu trúc thư mục bài nộp
 ```text
 23010027_Hoang Nhu Quynh_BTL/
-├── DacTa_ATM_Nhom10.xlsx             # File Excel dac ta 10 sheet
-├── README.md                         # Huong dan cai dat va chay thuc nghiem
+├── BaoCao_BTL_23010027_HoangNhuQuynh.pdf   # Bao cao chinh thuc (PDF)
+├── BaoCao_BTL_23010027_HoangNhuQuynh.docx  # Bao cao chinh thuc (Word)
+├── DacTa_ATM_Nhom10.xlsx                   # File Excel dac ta 10 sheet
+├── README.md                               # Huong dan cai dat va chay thuc nghiem
 │
-├── results/                          # Bang chung thuc nghiem va bao cao
-│   ├── kripke_model.png              # So do Kripke 5 trang thai
-│   ├── pipeline_execution.png        # Anh chup Pipeline Ch1-Ch6
-│   ├── bao_cao_tich_hop_atm_fuzzing_verification.pdf # Bao cao tu tool
-│   └── BaoCao_23010027_HoangNhuQuynh_ATM.pdf        # Bao cao chinh thuc
+├── results/                                # Bang chung thuc nghiem va bao cao tu tool
+│   ├── kripke_model.png                    # So do Kripke 5 trang thai
+│   ├── pipeline_execution.png              # Anh chup Pipeline Ch1-Ch6
+│   └── bao_cao_tich_hop_atm_fuzzing_verification.pdf # Bao cao tu tool
 │
-├── source/                           # Ma nguon he thong
-│   ├── v0/                           # Ban goc chua loi
-│   │   ├── parse_atm_pin_v0.c        # Loi CWE-120, 401, 415, 416
-│   │   └── atm_logic_v0.py           # Loi CWE-248 va backdoor Z3
+├── source/                                 # Ma nguon he thong
+│   ├── v0/                                 # Ban goc chua loi
+│   │   ├── parse_atm_pin_v0.c              # Loi CWE-120, 401, 415, 416
+│   │   └── atm_logic_v0.py                 # Loi CWE-248 va backdoor Z3
 │   │
-│   ├── v1/                           # Ban da va an toan
-│   │   ├── parse_atm_pin_v1.c        # Da va CERT C STR31-C
-│   │   └── atm_logic_v1.py           # Da kiem tra mau so va HMAC
+│   ├── v1/                                 # Ban da va an toan
+│   │   ├── parse_atm_pin_v1.c              # Da va CERT C STR31-C
+│   │   └── atm_logic_v1.py                 # Da kiem tra mau so va HMAC
 │   │
-│   └── atm_state_machine.c           # Mo phong may trang thai ATM
+│   └── atm_state_machine.c                 # Mo phong may trang thai ATM
 │
-└── tests/                            # Goi kiem thu tu dong (53 test cases)
+└── tests/                                  # Goi kiem thu tu dong (53 test cases)
     ├── test_atm_pin_retry_ratio_fuzz.py
     ├── test_atm_admin_override_pin_fuzz.py
     ├── test_target_parse_atm_pin_fuzz.py
